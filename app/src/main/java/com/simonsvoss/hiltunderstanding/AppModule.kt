@@ -34,6 +34,7 @@ object AppModule {
     @Provides
     // The function body of a function that is annotated with @Provides
     // will be executed every time Hilt needs to provide an instance of that type.
+    // This way, Interface1 is injectable not Interface1Impl
     fun provideInterface1Instance(): Interface1 = Interface1Impl()
     // By binds:
     // abstract class AppModule2 { ....
